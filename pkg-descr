@@ -1,0 +1,4 @@
+Imposm3 is a tool for importing OpenStreetMap data into a PostGIS enabled
+PostgreSQL database.
+
+WWW: http://imposm.org/docs/imposm3/latest/
