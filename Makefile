@@ -7,7 +7,7 @@ CATEGORIES=	misc
 MAINTAINER= 	th@skowron.biz
 COMMENT=	Imposm3 for FreeBSD
 
-LICENSE= 	apache20
+LICENSE= 	APACHE20
 
 BUILD_DEPENDS=	go:${PORTSDIR}/lang/go
 LIB_DEPENDS=	libprotobuf.so:${PORTSDIR}/devel/protobuf \
