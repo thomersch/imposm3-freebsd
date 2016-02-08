@@ -17,7 +17,7 @@ LIB_DEPENDS=	libprotobuf.so:${PORTSDIR}/devel/protobuf \
 USE_GITHUB=	yes
 GH_ACCOUNT=	omniscale
 GH_PROJECT=	imposm3
-GH_COMMIT=	593f252
+GH_COMMIT=	8949fe2
 GH_TAGNAME=	${GH_COMMIT}
 
 IMPOSM_SRC= 	src/github.com/omniscale
