@@ -23,7 +23,7 @@ IMPOSM_SRC=     src/github.com/omniscale
 
 do-build:
 	${MKDIR} ${WRKSRC}/${IMPOSM_SRC} && ${LN} -fs ${WRKSRC} ${WRKSRC}/${IMPOSM_SRC}/imposm3
-	GOPATH=${WRKSRC} CGO_CFLAGS="-I${PREFIX}/include -ferror-limit=0" CGO_LDFLAGS="-L${PREFIX}/lib/" go build -o ${WRKSRC}/imposm3 ${WRKSRC}/${IMPOSM_SRC}/imposm3/imposm3.go
+	GOPATH=${WRKSRC} CGO_CFLAGS="-I${PREFIX}/include -ferror-limit=0" CGO_LDFLAGS="-L${PREFIX}/lib/" go build -o ${WRKSRC}/imposm3 ${WRKSRC}/${IMPOSM_SRC}/imposm3/cmd/imposm3/*.go
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/imposm3 ${STAGEDIR}${PREFIX}/bin/
